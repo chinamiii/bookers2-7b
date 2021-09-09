@@ -64,8 +64,8 @@
               <td>前日の投稿はなし</td>
             <% else %>
                <td>
-       　        <% @the_day_before =   @today_book.count / @yesterday_book.count.to_f %>
-       　        <%= (@the_day_before * 100) %>%
+       　       <% @the_day_before =   @today_book.count / @yesterday_book.count.to_f %>
+       　       <%= (@the_day_before * 100) %>%
        　       </td>
             <% end %>
 
@@ -90,8 +90,8 @@
                 <td>先週の投稿はなし</td>
               <% else %>
        　        <td>
-       　          <% @the_week_before =   @this_week_book.count / @last_week_book.count.to_f  %>
-       　          <%= (@the_week_before * 100) %>%
+       　        <% @the_week_before =   @this_week_book.count / @last_week_book.count.to_f  %>
+       　        <%= (@the_week_before * 100) %>%
        　        </td>
               <% end %>
           </tr>
